@@ -42,17 +42,40 @@ public class BerryFun
    
     public BerryFun(IEventBus modEventBus, ModContainer modContainer)
     {
+        // Set up event bus
+        NeoForge.EVENT_BUS.register(this);
+
+        // Add listeners for mod init and adding creative tab entries
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::addCreative);
 
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        //modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-        
+        // Init config
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        // Some common setup code
         LOGGER.info("berry yummy");
+    }
+
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
+    {
+        //
+    }
+
+    @SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event)
+    {
+        // 
+    }
+
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents
+    {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event)
+        {
+            // 
+        }
     }
 }
