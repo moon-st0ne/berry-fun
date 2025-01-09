@@ -18,9 +18,10 @@ build
 .gradle
 
 # other
-eclipse
+.eclipse
 run
 runs
 run-data
+.vscode
 
 repo
