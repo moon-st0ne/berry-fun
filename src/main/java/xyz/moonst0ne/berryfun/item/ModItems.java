@@ -10,7 +10,8 @@ public class ModItems
 {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BerryFun.MODID);
 
-    public static final DeferredItem<Item> ORAN_BERRY = ITEMS.register("oran_berry", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLAIN_ICECREAM = ITEMS.register("plain_ice_cream", 
+        () -> new Item(new Item.Properties().food(ModFoodProperties.PLAIN_ICECREAM)));
 
     public static void register(IEventBus eventBus)
     {

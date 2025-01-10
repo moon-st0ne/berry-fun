@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "minecraft:bowl"
+        },
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:snowball"
+        },
+        {
+            "item": "minecraft:milk_bucket"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "berryfun:plain_ice_cream"
+    }
+}

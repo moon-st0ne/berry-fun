@@ -33,6 +33,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import xyz.moonst0ne.berryfun.item.ModCreativeModeTabs;
 import xyz.moonst0ne.berryfun.item.ModItems;
 
 @SuppressWarnings("unused")
@@ -47,6 +48,7 @@ public class BerryFun
         // Set up event bus
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         // Add listeners for mod init and adding creative tab entries
@@ -67,7 +69,7 @@ public class BerryFun
         // If we hit the FOOD_AND_DRINKS tab, add these items
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
         {
-            event.accept(ModItems.ORAN_BERRY);
+            event.accept(ModItems.PLAIN_ICECREAM);
         }
     }
 
