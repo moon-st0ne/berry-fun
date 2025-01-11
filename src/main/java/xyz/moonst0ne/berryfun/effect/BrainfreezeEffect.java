@@ -15,7 +15,7 @@ public class BrainfreezeEffect extends MobEffect
     @Override
     public boolean applyEffectTick(LivingEntity entity, int amplifier)
     {
-        entity.setTicksFrozen(20); // TODO: if i make this get the value first, it doesn't go away when the effect expires
+        entity.setIsInPowderSnow(true);
 
         return super.applyEffectTick(entity, amplifier);
     }
