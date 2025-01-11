@@ -8,11 +8,9 @@ import xyz.moonst0ne.berryfun.effect.ModEffects;
 
 public class ModFoodProperties 
 {
-    // juices can be quickly drank
     public static final FoodProperties JUICE = new FoodProperties.Builder()
         .nutrition(4)
         .saturationModifier(1.0f)
-        .fast()
         .usingConvertsTo(Items.GLASS_BOTTLE)
     .build();
 

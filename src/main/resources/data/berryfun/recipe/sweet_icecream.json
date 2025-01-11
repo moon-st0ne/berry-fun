@@ -6,7 +6,7 @@
             "item": "minecraft:snowball"
         },
         {
-            "item": "minecraft:sugar"
+            "item": "minecraft:sweet_berries"
         },
         {
             "item": "berryfun:bowl_of_cream"
@@ -14,6 +14,6 @@
     ],
     "result": {
         "count": 1,
-        "id": "berryfun:plain_ice_cream"
+        "id": "berryfun:sweet_berry_ice_cream"
     }
 }

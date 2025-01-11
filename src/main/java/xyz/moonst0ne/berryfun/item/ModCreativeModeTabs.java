@@ -18,12 +18,19 @@ public class ModCreativeModeTabs
     public static final Supplier<CreativeModeTab> BERRY_FUN_TAB = 
         CREATIVE_MODE_TAB.register("berryfun_items_tab", 
             () -> CreativeModeTab.builder()
-                .icon(() -> new ItemStack(ModItems.PLAIN_ICECREAM.get()))
+                .icon(() -> new ItemStack(ModItems.ROSELI_TEA.get()))
                 .title(Component.translatable("creativetab.berryfun.berryfun_items"))
-
+                .withSearchBar()
                 // this is where we add the item to the creative tab
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ModItems.CREAM);
                     output.accept(ModItems.PLAIN_ICECREAM);
+                    output.accept(ModItems.APPLE_ICECREAM);
+                    output.accept(ModItems.MELON_ICECREAM);
+                    output.accept(ModItems.CHOCOLATE_ICECREAM);
+                    output.accept(ModItems.SWEET_ICECREAM);
+                    output.accept(ModItems.GLOW_ICECREAM);
+                    output.accept(ModItems.CHORUS_ICECREAM);
                     output.accept(ModItems.ORAN_JUICE);
                     output.accept(ModItems.ROSELI_TEA);
                 }).build());
