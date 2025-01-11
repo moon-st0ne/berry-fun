@@ -54,9 +54,6 @@ public class BerryFun
         // Add listeners for mod init and adding creative tab entries
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
-
-        // Init config
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
