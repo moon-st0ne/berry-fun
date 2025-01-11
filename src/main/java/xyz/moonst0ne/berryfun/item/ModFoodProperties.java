@@ -4,6 +4,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Items;
+import xyz.moonst0ne.berryfun.effect.ModEffects;
 
 public class ModFoodProperties 
 {
@@ -39,7 +40,7 @@ public class ModFoodProperties
         .nutrition(4)
         .saturationModifier(0.5f)
         .usingConvertsTo(Items.BOWL)
-        .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 200), 0.25f)
+        .effect(() -> new MobEffectInstance(ModEffects.BRAIN_FREEZE_EFFECT, 40), 0.2f)
     .build();
 
     public static final FoodProperties BAKED_GOOD = new FoodProperties.Builder()

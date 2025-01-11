@@ -33,6 +33,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import xyz.moonst0ne.berryfun.effect.ModEffects;
 import xyz.moonst0ne.berryfun.item.ModCreativeModeTabs;
 import xyz.moonst0ne.berryfun.item.ModItems;
 
@@ -50,6 +51,7 @@ public class BerryFun
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Add listeners for mod init and adding creative tab entries
         modEventBus.addListener(this::commonSetup);
