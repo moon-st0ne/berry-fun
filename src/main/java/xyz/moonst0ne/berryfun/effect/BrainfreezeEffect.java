@@ -15,8 +15,6 @@ public class BrainfreezeEffect extends MobEffect
     @Override
     public boolean applyEffectTick(LivingEntity entity, int amplifier)
     {
-        // in theory this should cause the player to gain .2s worth of powder snow freeze time (per tick?)
-        // i'd rather have this be a one-off thing but if it's per-tick then i will just make it increment
         entity.setTicksFrozen(20); // TODO: if i make this get the value first, it doesn't go away when the effect expires
 
         return super.applyEffectTick(entity, amplifier);
