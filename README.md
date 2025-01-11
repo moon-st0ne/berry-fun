@@ -1,25 +1,16 @@
 
-Installation information
-=======
+Berry Fun!
+==========
+Berry Fun! is a small(ish) addon for Cobblemon which adds various comestibles made from Cobblemon's many inedible berries. Since the berries are based on real-life fruits (and, in one case, cockleburr seed pods?), I decided to make the items available per-berry vary depending on what their real-life counterparts are made into.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Expect to find juices, pies or cakes, pastries or tarts, teas or wines, breads and other baked goods, ice creams and candies, and of course jellies and jams.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+I have taken some creative liberties with a couple of the berries given their real-world purpose. For example, the Occa berry is based on a cacao pod.
+Minecraft already has Cocoa Beans, so it would be silly to call ice cream made with Occa berries "chocolate ice cream." I call it "occalate ice cream."
+What's the difference between chocolate and occalate? Enough questions. Eat the ice cream.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
+Sources:
 ==========
 Community Documentation: https://docs.neoforged.net/  
 NeoForged Discord: https://discord.neoforged.net/
+Kaupenjoe Neoforge Tutorials: https://www.youtube.com/@ModdingByKaupenjoe
