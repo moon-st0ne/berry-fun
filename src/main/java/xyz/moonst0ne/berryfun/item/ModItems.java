@@ -2,6 +2,7 @@ package xyz.moonst0ne.berryfun.item;
 
 import xyz.moonst0ne.berryfun.BerryFun;
 import xyz.moonst0ne.berryfun.item.custom.DrinkableItem;
+import xyz.moonst0ne.berryfun.item.custom.JuiceItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,7 +16,10 @@ public class ModItems
         () -> new Item(new Item.Properties().food(ModFoodProperties.ICE_CREAM)));
 
     public static final DeferredItem<Item> ORAN_JUICE = ITEMS.register("oran_juice",
-        () -> new DrinkableItem(new Item.Properties(), ModFoodProperties.JUICE));
+        () -> new JuiceItem(new Item.Properties(), ModFoodProperties.JUICE));
+
+    public static final DeferredItem<Item> ROSELI_TEA = ITEMS.register("roseli_tea",
+        () -> new DrinkableItem(new Item.Properties(), ModFoodProperties.TEA));
 
     public static void register(IEventBus eventBus)
     {

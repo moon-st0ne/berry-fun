@@ -63,11 +63,7 @@ public class BerryFun
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        // If we hit the FOOD_AND_DRINKS tab, add these items
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
-        {
-            event.accept(ModItems.PLAIN_ICECREAM);
-        }
+        // 
     }
 
     @SubscribeEvent
